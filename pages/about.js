@@ -3,9 +3,9 @@ import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.css'
 import { MainImage } from '@/components/mainImage'
-import Links from '@/components/links'
+import { Links } from '@/components/links'
 import { HeaderLogo } from '@/components/headerLogo'
-import HeaderTitle from '@/components/headerTitle'
+import { HeaderTitle } from '@/components/headerTitle'
 
 const inter = Inter({ subsets: ['latin'] })
 
