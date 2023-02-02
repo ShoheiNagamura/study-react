@@ -5,6 +5,7 @@ import styles from '@/styles/Home.module.css'
 import { MainImage } from '@/components/mainImage'
 import Links from '@/components/links'
 import { HeaderLogo } from '@/components/headerLogo'
+import HeaderTitle from '@/components/headerTitle'
 
 
 
@@ -22,10 +23,7 @@ export default function Home() {
       <main className={styles.main}>
 
         <div className={styles.description}>
-          <p>
-            Get started by index&nbsp;
-            <code className={styles.code}>pages/index.js</code>
-          </p>
+          <HeaderTitle title="index" page="index" />
 
           <HeaderLogo />
         </div>

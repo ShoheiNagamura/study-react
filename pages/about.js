@@ -5,6 +5,7 @@ import styles from '@/styles/Home.module.css'
 import { MainImage } from '@/components/mainImage'
 import Links from '@/components/links'
 import { HeaderLogo } from '@/components/headerLogo'
+import HeaderTitle from '@/components/headerTitle'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -21,10 +22,7 @@ export default function Home() {
       <main className={styles.main}>
 
         <div className={styles.description}>
-          <p>
-            Get started by about&nbsp;
-            <code className={styles.code}>pages/about.js</code>
-          </p>
+          <HeaderTitle title="about" page="about" />
 
           <HeaderLogo />
 
