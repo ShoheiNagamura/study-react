@@ -2,9 +2,9 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.css'
-import { Header } from '../components/Header'
 import { MainImage } from '@/components/mainImage'
 import Links from '@/components/links'
+import { HeaderLogo } from '@/components/headerLogo'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -20,7 +20,15 @@ export default function Home() {
 
       <main className={styles.main}>
 
-        < Header />
+        <div className={styles.description}>
+          <p>
+            Get started by about&nbsp;
+            <code className={styles.code}>pages/about.js</code>
+          </p>
+
+          <HeaderLogo />
+
+        </div>
 
         <MainImage />
 

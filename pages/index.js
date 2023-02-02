@@ -2,9 +2,9 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.css'
-import { Header } from '@/components/header'
 import { MainImage } from '@/components/mainImage'
 import Links from '@/components/links'
+import { HeaderLogo } from '@/components/headerLogo'
 
 
 
@@ -21,7 +21,14 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
 
-        <Header />
+        <div className={styles.description}>
+          <p>
+            Get started by index&nbsp;
+            <code className={styles.code}>pages/index.js</code>
+          </p>
+
+          <HeaderLogo />
+        </div>
 
         <MainImage />
 
