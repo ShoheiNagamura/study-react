@@ -8,12 +8,11 @@ import styles from '@/styles/Home.module.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export function HeaderTitle(props) {
-    console.log(props.title)
 
     return (
         <p>
-            Get started by {props.title}&nbsp;
-            <code className={styles.code}>pages/{props.page}.js</code>
+            Get started by {props.page}&nbsp;
+            {props.children}
         </p>
     )
 }
