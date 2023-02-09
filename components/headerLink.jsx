@@ -17,7 +17,6 @@ export function HeaderLink(props) {
                 <a className={styles.anchor}>About</a>
             </Link>
 
-
         </div >
     )
 }
