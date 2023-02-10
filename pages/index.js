@@ -4,7 +4,7 @@ import styles from '@/styles/Home.module.css'
 import { MainImage } from '@/components/mainImage/mainImage'
 import { Links } from '@/components/Links/links'
 import { HeaderSub } from '@/components/headerSub/headerSub'
-import { useCallback } from 'react'
+import { useCallback, useEffect } from 'react'
 
 
 
@@ -17,6 +17,20 @@ export default function Home() {
     e.preventDefault();
     alert("aaa")
   }, []);
+
+  useEffect(() => {
+    // マウント時の処理
+    document.body.style.backgroundColor = 'green';
+    console.log("マウント");
+
+    // アンマウント時の処理 returnで関数を返すことでアンマウントさせる
+    return () => {
+      document.body.style.backgroundColor = '';
+      console.log("アンマウント");
+
+    }
+  }, [])
+
 
   return (
     <>
